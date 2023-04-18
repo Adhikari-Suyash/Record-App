@@ -7,7 +7,7 @@ public class Login extends JFrame implements ActionListener{
     JLabel lbluser, lblpass;
     JTextField txtuser;
     JPasswordField txtpass;
-    JButton btnlogin;
+    JButton btnlogin, btnsup;
 
     public Login() {
 
@@ -19,6 +19,7 @@ public class Login extends JFrame implements ActionListener{
         txtpass = new JPasswordField(70);
 
         btnlogin = new JButton("Login");
+        btnsup = new JButton("Sign Up");
 
 
         setLayout(null);
@@ -39,6 +40,10 @@ public class Login extends JFrame implements ActionListener{
         add(btnlogin);
         btnlogin.setBounds(110, 100, 70, 25);
         btnlogin.addActionListener(this);
+
+        add(btnsup);
+        btnsup.setBounds(190, 100, 70, 25);
+        btnsup.addActionListener(this);
 
 
         setVisible(true);
